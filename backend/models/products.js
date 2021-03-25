@@ -65,7 +65,7 @@ const productSchema = new mongoose.Schema({
 
     seller: {
         type: String,
-        required: [true, 'Please enter product seller]
+        required: [true, 'Please enter product seller']
     },
 
     stock:{
@@ -94,14 +94,13 @@ const productSchema = new mongoose.Schema({
             type: String,
             required: true
         }
-    },
+    }
+    ],
 
     createdAt: {
         type: Date,
         default: Date.now
     }
-]
-
 
 })
 
